@@ -26,9 +26,14 @@ public class Ex7ObjectArrays {
                 new Hero("Furia", 38), new Hero("Tor", 51)};
 
        // TODO
-
-
-       // out.println("Strongest hero is " + heroes[strongestIndex].name);
+        //int strongestIndex = 0;
+        //for(int i = 1;i < heroes.strength.length();i++){
+          //  if(heroes[i-1].strength > heroes[i].strength){
+            //    strongestIndex = i;
+            //}
+        //}
+        out.print(Hero.name);
+        //out.println("Strongest hero is " + heroes[strongestIndex].name);
     }
 
     // ------ The class to use  -----------

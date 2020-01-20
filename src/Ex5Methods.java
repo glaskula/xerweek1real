@@ -16,20 +16,46 @@ public class Ex5Methods {
         // All, except last,  should print true
 
         // Uncomment one at the time
-        //out.println(sumTo(5) == 15);     // 1 + 2 + ... + 5 = 15
-        //out.println(sumTo(23) == 276);
-        //out.println(factorial(3) == 6);    // 3 * 2 * 1 = 6
-        //out.println(factorial(5) == 120);
-        //out.println(digitSum(1111) == 4);   // 1 + 1 + 1 + 1 = 4
-        //out.println(digitSum(12345) == 15);
+        out.println(sumTo(5) == 15);     // 1 + 2 + ... + 5 = 15
+        out.println(sumTo(23) == 276);
+        out.println(factorial(3) == 6);    // 3 * 2 * 1 = 6
+        out.println(factorial(5) == 120);
+        out.println(digitSum(1111) == 4);   // 1 + 1 + 1 + 1 = 4
+        out.println(digitSum(12345) == 15);
 
         String winner = "Olle";
         // A special case, should print: "Winner is Olle" (or whatever name)
-        //winnerMsg(winner);
+        winnerMsg(winner);
     }
 
     // ------ Write methods below this  -----------
 
    // TODO
+   int sumTo(int x){
+        int sum = 0;
+        for (int i = 0; i <= x; i++){
+            sum = sum + i;
+        }
+        return sum;
+    }
 
+    int factorial(int x){
+        int sum = 1;
+        for (int i = 1; i <= x; i++){
+            sum = sum * i;
+        }
+        return sum;
+    }
+    int digitSum(int number){
+        int sum = 0;
+        int i = 0;
+        while (number > 0) {
+            sum = sum + number % 10;
+            number = number / 10;
+        }
+        return sum;
+    }
+    void winnerMsg(String winner){
+        out.print("winner is " +winner);
+    }
 }

@@ -37,5 +37,5 @@ public class Ex1BMI {
         // --- Output ---------
         out.println("BMI = " + BMI);
     }
-
+//dsadas
 }
